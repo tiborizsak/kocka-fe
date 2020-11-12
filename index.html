@@ -1,0 +1,125 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>::MALACKOCKA::</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="data/img/dice.png" type="image/x-icon">
+    <link href="js/bs4/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <style>
+
+        body {
+            background-image: linear-gradient(rgba(62, 20, 20, 0.4), rgba(62, 20, 20, 0.4)), url(data/img/dice.jpg);
+            background-size: cover;
+            background-position: center;
+            align-content: center;
+            position: relative;
+        }
+
+        #hatterKontener{
+            background-color: rgba(254, 256, 256, 0.4);
+            /*font-weight: bold;*/
+        }
+
+        .jatekosCimke{
+            font-size: 20px;
+            /*color: rgba(254, 256, 256, 0.9);*/
+        }
+
+        .aktiv {
+            font-weight: bold;
+            border-left: 5px dotted rgba(179, 4, 4, 0.8);
+        }
+
+        .jatekosCimkeNyertes {
+            font-weight: bold;
+            font-size: 2rem;
+            color: white;
+        }
+
+        .eredmeny {
+            font-size: 2rem;
+            font-weight: bold;
+            border: 5px double rgba(179, 4, 4, 0.8);
+            background-color: rgba(254, 256, 256, 0.7);
+        }
+
+        .kockaSor {
+            height: 116px;
+        }
+
+        #kockaImg {
+            display: none;
+            max-height: 100px;
+            max-width: 100px;
+            position: center;
+        }
+
+        .gomb{
+            font-size: 2rem;
+        }
+
+        .ossz{
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-5 mb-5 pt-5 pb-5" id="hatterKontener">
+        <div class="container">
+            <div class="row justify-content-center">
+                <button class="btn-danger">ÚJ JÁTÉK INDÍTÁSA</button>
+            </div>
+            <div class="row justify-content-around">
+                <div class="col-3 text-center jatekosCimke aktiv" id="jatekos-0">
+                    Első játékos
+                </div>
+                <div class="col-3 text-center jatekosCimke" id="jatekos-1">
+                    Második játékos
+                </div>
+            </div>
+            <div class="row pt-2 justify-content-around">
+                <div class="col-3 text-center eredmeny eredmeny0" id="aktualis-0">0
+                </div>
+                <div class="col-3 text-center eredmeny eredmeny1" id="aktualis-1">0
+                </div>
+            </div>
+            <div class="row pt-3 justify-content-center">
+                <div class="col-3 text-center kockaSor">
+                    <button class="btn-danger gomb" id="gomb-0">DOBÁS</button>
+                </div>
+                <div class="col-3 text-center" id="kockaKep"><img src="data/img/dice-1.png" alt="kocka" id="kockaImg"></div>
+                <div class="col-3 text-center">
+                    <button class="btn-danger gomb" id="gomb-1">DOBÁS</button>
+                </div>
+            </div>
+            <div class="row pt-3 justify-content-around">
+                <div class="col-3 text-center">
+                    <button class="btn-danger gomb" id="megtart-0">MEGTART</button>
+                </div>
+                <div class="col-3 text-center">
+                    <button class="btn-danger gomb" id="megtart-1">MEGTART</button>
+                </div>
+            </div>
+            <div class="row pt-3 justify-content-around">
+                <div class="col-3 text-center ossz" id="osszPontCimke">
+                    Összpontszám:
+                </div>
+                <div class="col-3 text-center ossz" id="osszPontCimke2">
+                    Összpontszám:
+                </div>
+            </div>
+            <div class="row pt-3 justify-content-around">
+                <div class="col-3 text-center eredmeny" id="osszPont-0">0
+                </div>
+                <div class="col-3 text-center eredmeny" id="osszPont-1">0
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/bs4/js/bootstrap.bundle.js" type="text/javascript"></script>
+    <script src="js/jquery-3.5.0.js" type="text/javascript"></script>
+    <script src="js/kocka.js" type="text/javascript"></script>
+    </body>
+</html>
