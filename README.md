@@ -1,5 +1,5 @@
 # kocka-fe
-Simple couch co-op dice game where the first who reach 21 is the winner. This certain project manages the logic on the client side in JavaScript. The main goal of project 'kocka' is to figure out how to detach logic from the presentation layer and implement it in Python(Flask). If you are intrested in the prototype of the backend please visit https://github.com/tiborizsak/kocka-be/
+Simple couch co-op dice game where the first who reach 100 points is the winner. This certain project manages the logic on the client side in JavaScript. The main goal of project 'kocka' is to figure out how to detach logic from the presentation layer and implement it in Python(Flask). If you are intrested in the prototype of the backend please visit https://github.com/tiborizsak/kocka-be/
 
 ```javascript
 
